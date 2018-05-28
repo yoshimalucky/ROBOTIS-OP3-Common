@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!--
+  <xacro:property name="pi" value="3.141592654" />
+  -->
+
+  <!-- body link -->
+  <xacro:macro name="insert_mesh_body_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/body.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- right hip yaw link -->
+  <xacro:macro name="insert_mesh_r_hip_yaw_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/rl1.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- right hip roll link -->
+  <xacro:macro name="insert_mesh_r_hip_roll_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/rl2.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- right hip pitch link -->
+  <xacro:macro name="insert_mesh_r_hip_pitch_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/rl3.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- right knee link -->
+  <xacro:macro name="insert_mesh_r_knee_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/rl4.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- right ankle pitch link -->
+  <xacro:macro name="insert_mesh_r_ank_pitch_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/rl5.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- right ankle roll link -->
+  <xacro:macro name="insert_mesh_r_ank_roll_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/rl6.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- left hip yaw link -->
+  <xacro:macro name="insert_mesh_l_hip_yaw_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/ll1.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- left hip roll link -->
+  <xacro:macro name="insert_mesh_l_hip_roll_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/ll2.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- left hip pitch link -->
+  <xacro:macro name="insert_mesh_l_hip_pitch_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/ll3.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- left knee link -->
+  <xacro:macro name="insert_mesh_l_knee_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/ll4.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- left ankle pitch link -->
+  <xacro:macro name="insert_mesh_l_ank_pitch_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/ll5.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- left ankle roll link -->
+  <xacro:macro name="insert_mesh_l_ank_roll_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/ll6.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- right shoulder pitch joint -->
+  <xacro:macro name="insert_mesh_r_sho_pitch_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/ra1.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- right shoulder pitch joint -->
+  <xacro:macro name="insert_mesh_r_sho_roll_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/ra2.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- right elbow joint -->
+  <xacro:macro name="insert_mesh_r_el_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/ra3.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- left shoulder pitch joint -->
+  <xacro:macro name="insert_mesh_l_sho_pitch_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/la1.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- left shoulder pitch joint -->
+  <xacro:macro name="insert_mesh_l_sho_roll_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/la2.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- left elbow joint -->
+  <xacro:macro name="insert_mesh_l_el_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/la3.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- head yaw joint -->
+  <xacro:macro name="insert_mesh_head_pan_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/h1.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+  <!-- head yaw joint -->
+  <xacro:macro name="insert_mesh_head_tilt_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/h2.dae"  scale="1.000 1.000 1.000"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+</robot>
